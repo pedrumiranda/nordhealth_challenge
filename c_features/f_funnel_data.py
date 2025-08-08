@@ -80,12 +80,13 @@ class FunnelDataProcessor:
         print(f"Comprehensive funnel analysis created. Shape: {funnel_df.shape}")
         return funnel_df
     
-    def export_to_csv(self, funnel_df: pd.DataFrame) -> str:
+    def export_to_csv(self, funnel_df: pd.DataFrame, metrics: dict = None) -> str:
         """
-        Export funnel analysis to CSV.
+        Export funnel analysis data and metrics to CSV.
         
         Args:
             funnel_df: The funnel analysis dataframe to export
+            metrics: Dictionary containing funnel metrics (optional)
             
         Returns:
             str: Path to the exported CSV file
@@ -95,12 +96,21 @@ class FunnelDataProcessor:
         print(f"\nFunnel Analysis Table Preview:")
         print(funnel_df.head())
         
-        # Create output directory and write to CSV
+        # Create output directory
         os.makedirs(self.output_dir, exist_ok=True)
+        
+        # Export main funnel data
         output_path = os.path.join(self.output_dir, 'f_funnel_data.csv')
         funnel_df.to_csv(output_path, index=False)
-        
         print(f"Funnel data written to '{output_path}'")
+        
+        # Export metrics if provided
+        if metrics:
+            metrics_path = os.path.join(self.output_dir, 'f_funnel_metrics.csv')
+            metrics_df = pd.DataFrame([metrics])
+            metrics_df.to_csv(metrics_path, index=False)
+            print(f"Funnel metrics written to '{metrics_path}'")
+        
         return output_path
     
     def analyze_funnel_metrics(self, funnel_df: pd.DataFrame) -> dict:
@@ -152,8 +162,8 @@ class FunnelDataProcessor:
             self.load_staging_data()
             self.prepare_database()
             funnel_df = self.create_funnel_analysis()
-            output_path = self.export_to_csv(funnel_df)
             metrics = self.analyze_funnel_metrics(funnel_df)
+            output_path = self.export_to_csv(funnel_df, metrics)
             
             print("\nFunnel analysis completed successfully!")
             return output_path, metrics
