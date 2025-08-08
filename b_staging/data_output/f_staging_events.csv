@@ -1,0 +1,28 @@
+record_id,client_id,event_type,event_date,plan,region,marketing_channel,sales_rep_id,source_system,event_rank
+1,1001,applied,2023-01-05 00:00:00,Premium,US,Email,57,internal_form,1
+2,1001,applied,2023-01-06 00:00:00,Premium,US,Email,57,manual_upload,2
+3,1001,signed,2023-01-07 00:00:00,Premium,US,Email,57,internal_form,1
+4,1002,applied,2023-01-06 00:00:00,Basic,US,Organic Search,62,web_api,1
+7,1002,churned,2023-02-01 00:00:00,Premium,US,Organic Search,71,web_api,1
+5,1002,signed,2023-01-10 00:00:00,Basic,US,Organic Search,62,internal_form,1
+6,1002,signed,2023-01-11 00:00:00,Premium,US,Organic Search,71,manual_upload,2
+8,1003,applied,2023-01-08 00:00:00,Unknown,CA,Paid Ads,-1,web_api,1
+9,1003,applied,2023-01-09 00:00:00,Unknown,CA,Paid Ads,62,internal_form,2
+10,1003,applied,2023-01-09 00:00:00,Unknown,CA,Paid Ads,62,manual_upload,3
+11,1004,applied,2023-01-10 00:00:00,Pro,CA,Referral,57,web_api,1
+13,1004,churned,2023-02-01 00:00:00,Pro,CA,Referral,57,internal_form,1
+12,1004,signed,2023-01-20 00:00:00,Pro,CA,Referral,57,internal_form,1
+14,1005,applied,2023-01-15 00:00:00,Basic,UK,Paid Ads,-1,manual_upload,1
+15,1005,docs_submitted,2023-01-16 00:00:00,Basic,UK,Paid Ads,71,web_api,1
+16,1005,signed,2023-01-18 00:00:00,Basic,UK,Paid Ads,71,internal_form,1
+17,1006,applied,2023-01-18 00:00:00,Pro,UK,Email,71,web_api,1
+18,1006,rejected,2023-01-19 00:00:00,Pro,UK,Email,71,internal_form,1
+19,1007,applied,2023-01-20 00:00:00,Premium,BR,Organic Search,62,web_api,1
+21,1007,churned,2023-02-15 00:00:00,Premium,BR,Organic Search,62,manual_upload,1
+20,1007,signed,2023-01-25 00:00:00,Premium,BR,Organic Search,62,internal_form,1
+22,1008,applied,2023-01-22 00:00:00,Basic,US,Referral,71,web_api,1
+23,1008,applied,2023-01-23 00:00:00,Premium,US,Referral,71,internal_form,2
+24,1008,signed,2023-01-29 00:00:00,Unknown,US,Referral,57,manual_upload,1
+25,1009,applied,2023-01-30 00:00:00,Pro,IT,Paid Ads,62,internal_form,1
+27,1009,churned,2023-02-05 00:00:00,Pro,IT,Paid Ads,62,web_api,1
+26,1009,signed,2023-01-28 00:00:00,Pro,IT,Paid Ads,62,manual_upload,1

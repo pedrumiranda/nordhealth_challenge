@@ -1,0 +1,23 @@
+client_id,inconsistency_type,description,relevant_date,days_inactive,signed_count,application_count,date_range_days,record_id,event_type,event_date,plan,sales_rep_id,region,marketing_channel,source_system,violation_type,first_applied_date,first_signed_date,first_docs_date,first_rejected_date,first_churned_date,applied_count,docs_count,rejected_count,first_applied,first_signed,unique_plans,all_plans,first_event,last_event
+1003,Q6_long_inactive_unsigned,Unsigned client with long inactivity (>60 days) - potential at-risk,2023-01-09 00:00:00,942.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,,
+1006,Q6_long_inactive_unsigned,Unsigned client with long inactivity (>60 days) - potential at-risk,2023-01-19 00:00:00,932.0,0.0,,,,,,,,,,,,,,,,,,,,,,,,,
+1001,Q1_multiple_applications,Client has multiple application events,2023-01-05 00:00:00,,,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,
+1003,Q1_multiple_applications,Client has multiple application events,2023-01-08 00:00:00,,,3.0,1.0,,,,,,,,,,,,,,,,,,,,,,,
+1008,Q1_multiple_applications,Client has multiple application events,2023-01-22 00:00:00,,,2.0,1.0,,,,,,,,,,,,,,,,,,,,,,,
+1003,unknown_values,Plan field has Unknown value,,,,,,8.0,applied,2023-01-08 00:00:00,Unknown,-1.0,CA,Paid Ads,web_api,,,,,,,,,,,,,,,
+1003,unknown_values,Plan field has Unknown value,,,,,,9.0,applied,2023-01-09 00:00:00,Unknown,62.0,CA,Paid Ads,internal_form,,,,,,,,,,,,,,,
+1003,unknown_values,Plan field has Unknown value,,,,,,10.0,applied,2023-01-09 00:00:00,Unknown,62.0,CA,Paid Ads,manual_upload,,,,,,,,,,,,,,,
+1005,unknown_values,Sales rep ID is -1 (missing/unknown),,,,,,14.0,applied,2023-01-15 00:00:00,Basic,-1.0,UK,Paid Ads,manual_upload,,,,,,,,,,,,,,,
+1008,unknown_values,Plan field has Unknown value,,,,,,24.0,signed,2023-01-29 00:00:00,Unknown,57.0,US,Referral,manual_upload,,,,,,,,,,,,,,,
+1009,sequence_violation,Client signed before applying,,,,,,,,,,,,,,signed_before_applied,2023-01-30 00:00:00,2023-01-28 00:00:00,,,2023-02-05 00:00:00,,,,,,,,,
+1005,docs_submitted_analysis,Has docs submission event,,,1.0,,,,,,,,,,,,,,,,,1.0,1.0,0.0,2023-01-15 00:00:00,2023-01-18 00:00:00,,,,
+1001,docs_submitted_analysis,Applied and signed without docs submission,,,1.0,,,,,,,,,,,,,,,,,2.0,0.0,0.0,2023-01-05 00:00:00,2023-01-07 00:00:00,,,,
+1002,docs_submitted_analysis,Applied and signed without docs submission,,,2.0,,,,,,,,,,,,,,,,,1.0,0.0,0.0,2023-01-06 00:00:00,2023-01-10 00:00:00,,,,
+1004,docs_submitted_analysis,Applied and signed without docs submission,,,1.0,,,,,,,,,,,,,,,,,1.0,0.0,0.0,2023-01-10 00:00:00,2023-01-20 00:00:00,,,,
+1007,docs_submitted_analysis,Applied and signed without docs submission,,,1.0,,,,,,,,,,,,,,,,,1.0,0.0,0.0,2023-01-20 00:00:00,2023-01-25 00:00:00,,,,
+1008,docs_submitted_analysis,Applied and signed without docs submission,,,1.0,,,,,,,,,,,,,,,,,2.0,0.0,0.0,2023-01-22 00:00:00,2023-01-29 00:00:00,,,,
+1009,docs_submitted_analysis,Applied and signed without docs submission,,,1.0,,,,,,,,,,,,,,,,,1.0,0.0,0.0,2023-01-30 00:00:00,2023-01-28 00:00:00,,,,
+1003,docs_submitted_analysis,Applied but no docs submission (still pending?),,,0.0,,,,,,,,,,,,,,,,,3.0,0.0,0.0,2023-01-08 00:00:00,,,,,
+1006,docs_submitted_analysis,Other pattern,,,0.0,,,,,,,,,,,,,,,,,1.0,0.0,1.0,2023-01-18 00:00:00,,,,,
+1008,plan_inconsistency,Client has multiple different plans across events,,,,,,,,,,,,,,,,,,,,,,,,,3.0,"Basic,Premium,Unknown",2023-01-22 00:00:00,2023-01-29 00:00:00
+1002,plan_inconsistency,Client has multiple different plans across events,,,,,,,,,,,,,,,,,,,,,,,,,2.0,"Basic,Premium",2023-01-06 00:00:00,2023-02-01 00:00:00

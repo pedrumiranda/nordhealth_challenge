@@ -1,0 +1,28 @@
+record_id,client_id,event_type,event_date,plan,region,marketing_channel,sales_rep_id,source_system
+1,1001,applied,2023-01-05,Premium,US,Email,57,internal_form
+2,1001,applied,2023-01-06,Premium,US,Email,57,manual_upload
+3,1001,signed,2023-01-07,Premium,US,Email,57,internal_form
+4,1002,applied,2023-01-06,Basic,US,Organic Search,62,web_api
+5,1002,signed,2023-01-10,Basic,US,Organic Search,62,internal_form
+6,1002,signed,2023-01-11,Premium,US,Organic Search,71,manual_upload
+7,1002,churned,2023-02-01,Premium,US,Organic Search,71,web_api
+8,1003,applied,2023-01-08,,CA,Paid Ads,,web_api
+9,1003,applied,2023-01-09,,CA,Paid Ads,62,internal_form
+10,1003,applied,2023-01-09,,CA,Paid Ads,62,manual_upload
+11,1004,applied,2023-01-10,Pro,CA,Referral,57,web_api
+12,1004,signed,2023-01-20,Pro,CA,Referral,57,internal_form
+13,1004,churned,2023-02-01,Pro,CA,Referral,57,internal_form
+14,1005,applied,2023-01-15,Basic,UK,Paid Ads,,manual_upload
+15,1005,docs_submitted,2023-01-16,Basic,UK,Paid Ads,71,web_api
+16,1005,signed,2023-01-18,Basic,UK,Paid Ads,71,internal_form
+17,1006,applied,2023-01-18,Pro,UK,Email,71,web_api
+18,1006,rejected,2023-01-19,Pro,UK,Email,71,internal_form
+19,1007,applied,2023-01-20,Premium,BR,Organic Search,62,web_api
+20,1007,signed,2023-01-25,Premium,BR,Organic Search,62,internal_form
+21,1007,churned,2023-02-15,Premium,BR,Organic Search,62,manual_upload
+22,1008,applied,2023-01-22,Basic,US,Referral,71,web_api
+23,1008,applied,2023-01-23,Premium,US,Referral,71,internal_form
+24,1008,signed,2023-01-29,,US,Referral,57,manual_upload
+25,1009,applied,2023-01-30,Pro,IT,Paid Ads,62,internal_form
+26,1009,signed,2023-01-28,Pro,IT,Paid Ads,62,manual_upload
+27,1009,churned,2023-02-05,Pro,IT,Paid Ads,62,web_api
